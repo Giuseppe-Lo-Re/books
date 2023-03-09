@@ -34,6 +34,8 @@ function App() {
 
     return(
         <div className="app">
+            <h1>Reading list</h1>
+
             <BookList 
                 onEdit={editBookById} 
                 books={books} 
