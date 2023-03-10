@@ -3,10 +3,10 @@ import axios from "axios";
 import BookCreate from "./components/BookCreate";
 import BookList from "./components/BookList";
 
-
 function App() {
     const [books, setBooks] = useState([]); 
 
+    // Get all books
     const fetchBooks = async () => {
         const response = await axios.get('http://localhost:3001/books');
 
@@ -17,6 +17,7 @@ function App() {
         fetchBooks();
     }, []);
 
+    // Update a book
     const editBookById = async (id, newTitle) => {
         const response = await axios.put(`http://localhost:3001/books/${id}`, {
             title: newTitle
@@ -32,6 +33,7 @@ function App() {
         setBooks(updatedBooks);
     };
 
+    // Delete a book
     const deleteBookById = async (id) => {
         const response = await axios.delete(`http://localhost:3001/books/${id}`);
 
@@ -42,6 +44,7 @@ function App() {
         setBooks(updatedBooks);
     };
 
+    // Create a book
     const createBook = async (title) => {
         const response = await axios.post('http://localhost:3001/books', {
             title
