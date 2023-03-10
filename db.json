@@ -1,12 +1,8 @@
 {
   "books": [
     {
-      "title": "ASP.NET CORE",
+      "title": "React",
       "id": 1
-    },
-    {
-      "title": "REACT",
-      "id": 2
     }
   ]
 }
