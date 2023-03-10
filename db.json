@@ -1,11 +1,11 @@
 {
   "books": [
     {
-      "title": "The Force of Discipline",
+      "title": "ASP.NET CORE",
       "id": 1
     },
     {
-      "title": "If you want, U CAN!",
+      "title": "REACT",
       "id": 2
     }
   ]
