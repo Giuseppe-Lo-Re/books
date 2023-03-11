@@ -1,5 +1,3 @@
-import { useContext } from "react";
-import BooksContext from "../context/books";
 import BookShow from "./BookShow";
 import useBooksContext from "../hooks/use-books-context";
 
